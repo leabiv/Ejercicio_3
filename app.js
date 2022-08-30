@@ -24,6 +24,9 @@ myPromesas.then((message) => {
 //
 // llamar a la función delayUpperCase
 
+
+//const cadena = document.getElementById('cadena').value;
+
 /**
  * @param {string} resolve - cumplida 
  * @param {string} reject - rechazada
@@ -44,13 +47,9 @@ const myPromise = new Promise((resolve, reject) => {
  * @param {string} parametro - cadena
  * @return {boolean} retorna true o false
  */
-let parametro = 'hola mundo';
+let parametro = 'cadena';
 function delayedUpperCase(parametro) {
-    if (typeof parametro === 'string' || parametro instanceof String) {
-        return true;
-    } else {
-        return false;
-    }
+        return typeof parametro === 'string' || parametro instanceof String;
 }
 
 myPromise.then((message) => {
